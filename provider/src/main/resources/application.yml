@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: provider
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    enabled: true
+    traceId128: true
+    sampler:
+      percentage: 1
+  dubbo:
+    provider:
+      filter: 'tracing'
+    consumer:
+      filter: 'tracing'
+
+server:
+  port: 9090
+management:
+  port: 9091
+
+dubbo:
+  scan:
+    base-packages: com.lchml.test.dubbo.sleuth
+  protocol:
+    port: '20008'
+    name: dubbo
+    id: dubbo
+  application:
+    name: provider
+    id: provider
+  registry:
+    protocol: zookeeper
+    address: 192.168.100.101:2181
+    client: curator
+    id: test
+  provider:
+    filter: 'tracing'
