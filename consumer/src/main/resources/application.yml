@@ -7,23 +7,16 @@ spring:
     base-url: http://localhost:9411
   sleuth:
     enabled: true
+    traceId128: true
     sampler:
-      percentage: 1
-  dubbo:
-    provider:
-      filter: 'tracing'
-    consumer:
-      filter: 'tracing'
+      probability: 1.0
 
 dubbo:
   application:
     name: consumer
     id: consumer
-    qos:
-      enable: 'false'
   registry:
-    protocol: zookeeper
-    address: 192.168.100.101:2181
+    address: zookeeper://192.168.100.101:2181
     client: curator
     id: test
   consumer:

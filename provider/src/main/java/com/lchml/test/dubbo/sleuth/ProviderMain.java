@@ -8,7 +8,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  * Created by lc on 2018/06/27.
  */
 @SpringBootApplication
-//@Import(TraceAutoConfiguration.class)
 public class ProviderMain {
 
     public static void main(String[] args) {

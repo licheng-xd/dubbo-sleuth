@@ -12,7 +12,12 @@ import java.util.Date;
         application = "${dubbo.application.id}",
         protocol = "${dubbo.protocol.id}",
         registry = "${dubbo.registry.id}")
+@Component
 public class TestServiceImpl implements TestService {
+
+    public TestServiceImpl() {
+        System.out.println("TestServiceImpl init ....................");
+    }
 
     @Override
     public String getTime() {

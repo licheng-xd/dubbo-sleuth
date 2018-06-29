@@ -12,7 +12,7 @@
 
     <!-- logger -->
     <logger name="com.lchml" level="DEBUG"/>
-    <logger name="com.alibaba.dubbo" level="DEBUG"/>
+    <logger name="com.alibaba.dubbo" level="INFO"/>
     <logger name="org.springframework.cache" level="INFO"/>
     <logger name="org.springframework" level="INFO"/>
 
