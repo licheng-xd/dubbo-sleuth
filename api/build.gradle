@@ -1,16 +1,8 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${SpringBootVersion}")
-    }
-}
 
-apply plugin: 'org.springframework.boot'
+
+
 
 dependencies {
-
     compile "org.springframework.cloud:spring-cloud-starter-sleuth:${SleuthVersion}"
     compile "org.springframework.cloud:spring-cloud-starter-zipkin:${SleuthVersion}"
     compile "org.springframework.cloud:spring-cloud-sleuth-core:${SleuthVersion}"
@@ -20,3 +12,4 @@ dependencies {
         exclude(group: 'com.alibaba', module: 'dubbo')
     }
 }
+

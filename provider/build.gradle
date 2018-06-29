@@ -1,16 +1,7 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${SpringBootVersion}")
-    }
-}
 
 apply plugin: 'org.springframework.boot'
 
 dependencies {
     compile project(":api")
-
     compile ("com.alibaba.boot:dubbo-spring-boot-starter:${DubboBootVersion}")
 }

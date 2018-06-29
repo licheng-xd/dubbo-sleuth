@@ -1,6 +1,7 @@
 package com.lchml.test.dubbo.sleuth;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.lchml.test.dubbo.sleuth.api.TestService;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;

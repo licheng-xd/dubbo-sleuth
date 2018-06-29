@@ -18,23 +18,21 @@ subprojects {
     ext {
         SpringVersion = '5.0.7.RELEASE'
         SpringBootVersion = '2.0.3.RELEASE'
-        CuratorVersion = '2.12.0'
-        HttpClientVersion = '4.4.1'
-        HttpCoreVersion = '4.4.8'
-        JacksonVersion = '2.8.10'
-        DubboVersion = '2.6.0'
         DubboBootVersion = '0.2.0'
-        CuratorVersion = '2.7.0'
         SleuthVersion = "2.0.0.RELEASE"
     }
 
-    dependencies {
 
+    buildscript {
+        repositories {
+            mavenCentral()
+        }
+        dependencies {
+            classpath("org.springframework.boot:spring-boot-gradle-plugin:${SpringBootVersion}")
+        }
     }
 
     configurations {
-        compile.exclude module: "log4j"
-        compile.exclude module: "commons-logging"
-        //compile.exclude module: "spring-boot-starter-tomcat"
+        compile.exclude module: "spring-boot-starter-tomcat"
     }
 }

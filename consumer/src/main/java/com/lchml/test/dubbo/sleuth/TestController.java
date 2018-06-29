@@ -1,6 +1,7 @@
 package com.lchml.test.dubbo.sleuth;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.lchml.test.dubbo.sleuth.api.TestService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
