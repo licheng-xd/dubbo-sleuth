@@ -7,6 +7,7 @@ dependencies {
 
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-undertow")
+    compile "org.springframework.boot:spring-boot-starter-aop"
     compile "com.alibaba.boot:dubbo-spring-boot-starter:${DubboBootVersion}"
     compile "org.springframework:spring-web:${SpringVersion}"
     compile "org.springframework:spring-webmvc:${SpringVersion}"

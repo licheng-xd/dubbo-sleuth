@@ -1,8 +1,13 @@
 
-
+apply plugin: 'org.springframework.boot'
 
 
 dependencies {
+
+    compile ("com.alibaba.boot:dubbo-spring-boot-starter:${DubboBootVersion}")
+
+    compile "org.springframework.kafka:spring-kafka:2.1.7.RELEASE"
+
     compile "org.springframework.cloud:spring-cloud-starter-sleuth:${SleuthVersion}"
     compile "org.springframework.cloud:spring-cloud-starter-zipkin:${SleuthVersion}"
     compile "org.springframework.cloud:spring-cloud-sleuth-core:${SleuthVersion}"

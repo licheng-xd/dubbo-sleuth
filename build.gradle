@@ -33,6 +33,8 @@ subprojects {
     }
 
     configurations {
+        compile.exclude module: "log4j"
+        compile.exclude module: "commons-logging"
         compile.exclude module: "spring-boot-starter-tomcat"
     }
 }

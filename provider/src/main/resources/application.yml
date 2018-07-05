@@ -1,6 +1,6 @@
 spring:
   application:
-    name: provider
+    name: test-provider
   zipkin:
     base-url: http://localhost:9411
   sleuth:
@@ -17,8 +17,8 @@ dubbo:
     name: dubbo
     id: dubbo
   application:
-    name: provider
-    id: provider
+    name: test-provider
+    id: test-provider
   registry:
     address: zookeeper://192.168.100.101:2181
     client: curator
