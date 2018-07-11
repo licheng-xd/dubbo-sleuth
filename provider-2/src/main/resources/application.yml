@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: test-provider2
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    enabled: true
+    traceId128: true
+    sampler:
+      probability: 1.0
+
+dubbo:
+  scan:
+    basePackages: com.lchml.test
+  protocol:
+    port: '20009'
+    name: dubbo
+    id: dubbo
+  application:
+    name: test-provider2
+    id: test-provider2
+  registry:
+    address: zookeeper://192.168.100.101:2181
+    client: curator
+    id: test
+  provider:
+    filter: 'tracing'
+  consumer:
+    filter: 'tracing'
