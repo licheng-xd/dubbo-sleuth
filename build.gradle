@@ -1,7 +1,7 @@
 subprojects {
     apply plugin: 'java'
 
-    group 'com.lchml.test.dubbo.sleuth'
+    group 'com.lchml.test'
     version = '1.0.0-SNAPSHOT'
     sourceCompatibility = 1.8
 
@@ -20,6 +20,8 @@ subprojects {
         SpringBootVersion = '2.0.3.RELEASE'
         DubboBootVersion = '0.2.0'
         SleuthVersion = "2.0.0.RELEASE"
+        MybatisBootVersion = '1.3.1'
+        HikariCPVersion = '2.7.2'
     }
 
 

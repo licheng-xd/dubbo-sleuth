@@ -4,7 +4,6 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
@@ -26,7 +25,7 @@ public class ComsumerMain implements WebMvcConfigurer {
 
     public static void main(String[] args) {
         new SpringApplicationBuilder(ComsumerMain.class)
-                .web(WebApplicationType.SERVLET) // 非 Web 应用
+                .web(WebApplicationType.SERVLET)
                 .run(args);
     }
 }

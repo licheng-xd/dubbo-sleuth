@@ -5,6 +5,8 @@ apply plugin: 'io.spring.dependency-management'
 dependencies {
     compile project(":api")
 
+    compile "com.netease.sentry:sentry-javaagent-collector:1.2.12"
+    
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-undertow")
     compile "org.springframework.boot:spring-boot-starter-aop"
