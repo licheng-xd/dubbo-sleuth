@@ -6,20 +6,13 @@ import com.lchml.test.dubbo.sleuth.api.TestService2;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by lc on 2018/06/28.
  */
 @RestController
-public class TestController extends AbstractController {
-
-    private LocalBean localBean;
-
-    public TestController() {
-        System.out.println("init test controller");
-        localBean = new LocalBean();
-    }
+public class TestController {
 
     @Reference(check = false, version = "1.0.0")
     private TestService testService;
@@ -27,13 +20,9 @@ public class TestController extends AbstractController {
     @Reference(check = false, version = "1.0.0")
     private TestService2 testService2;
 
-    @Resource
-    private TracingTest tracingTest;
-
 
     @RequestMapping("/")
-    public String getTime() {
-        System.out.println(localBean.test());
+    public String getTime(HttpServletRequest request) {
         return testService.getTime();
     }
 

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 /**
  * Created by lc on 2018/07/04.
  */
-//@Component
 public class EnableTestImportSelector implements ImportSelector {
 
     @Override

@@ -3,6 +3,8 @@ package com.lchml.test.dubbo.sleuth;
 import org.springframework.beans.factory.InitializingBean;
 
 /**
+ * test for importSelector
+ *
  * Created by lc on 2018/07/04.
  */
 public class LocalBean implements InitializingBean {

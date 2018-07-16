@@ -2,5 +2,4 @@ include 'api'
 include 'consumer'
 include 'provider'
 include 'provider-2'
-include 'hikari-test'
 

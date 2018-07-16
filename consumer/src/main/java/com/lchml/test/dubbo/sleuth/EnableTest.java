@@ -15,5 +15,4 @@ import java.lang.annotation.Target;
 @Import(EnableTestImportSelector.class)
 public @interface EnableTest {
 
-//    String value () default "";
 }
