@@ -14,6 +14,15 @@ dependencies {
     compile ("io.zipkin.brave:brave-instrumentation-dubbo-rpc:5.1.0") {
         exclude(group: 'com.alibaba', module: 'dubbo')
     }
+
+    // feign
+    compile "io.github.openfeign:feign-core:${FeignVersion}"
+    compile "io.github.openfeign:feign-jackson:${FeignVersion}"
+    compile "io.github.openfeign:feign-okhttp:${FeignVersion}"
+
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '2.0.0.RELEASE'
+
 }
 
 jar {

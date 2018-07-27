@@ -15,7 +15,8 @@
     <logger name="com.alibaba.dubbo" level="INFO"/>
     <logger name="org.springframework.cache" level="INFO"/>
     <logger name="org.springframework" level="INFO"/>
-
+    <logger name="org.springframework.cloud.sleuth" level="DEBUG"/>
+    <logger name="brave" level="DEBUG"/>
     <!-- root -->
     <root level="INFO">
         <appender-ref ref="STDOUT"/>

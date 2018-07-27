@@ -13,9 +13,11 @@
 
     <!-- logger -->
     <logger name="com.lchml" level="DEBUG"/>
-    <logger name="com.alibaba.dubbo" level="INFO"/>
-    <logger name="org.springframework.cache" level="INFO"/>
+    <logger name="com.lchml" level="DEBUG"/>
     <logger name="org.springframework" level="INFO"/>
+    <logger name="org.springframework.cache" level="INFO"/>
+    <logger name="org.springframework.cloud.sleuth" level="DEBUG"/>
+    <logger name="io.zipkin" level="DEBUG"/>
 
     <!-- root -->
     <root level="INFO">
